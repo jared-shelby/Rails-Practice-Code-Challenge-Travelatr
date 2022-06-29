@@ -17,7 +17,7 @@ class Blogger < ApplicationRecord
 
     # return post with most likes
     def featured_post
-        self.posts.max_by { |post| post.likes }
+        self.posts.max_by { |post| post.likes } 
     end
 
 end
