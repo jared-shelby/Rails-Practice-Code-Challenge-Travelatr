@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  resources :posts, :destinations, :bloggers
+  resources :bloggers, only: [:new, :create, :show]
+  resources :posts
+  resources :destinations
 end
